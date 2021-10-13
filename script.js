@@ -47,7 +47,7 @@ rollDiceBtn.addEventListener('click', function () {
   if (playing) {
     let randDice = Math.trunc(Math.random() * 6) + 1;
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${randDice}.png`;
+    diceEl.src = `./img/dice-${randDice}.png`;
     if (randDice !== 1) {
       current += randDice;
       document.getElementById(`current--${activePlayer}`).textContent = current;
